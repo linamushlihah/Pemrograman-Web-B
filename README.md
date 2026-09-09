@@ -1,4 +1,4 @@
-# Pemrograman-Web-B
+# Study Map - Pemrograman Web (B)
 Lina Mushlihah 
 5025251063
 
