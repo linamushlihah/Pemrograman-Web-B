@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil Saya</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff7f7 0%, #fef1f4 100%);
+            color: #4d332f;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.7);
+            border: 1px solid #f5dfe7;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(138, 90, 77, 0.08);
+        }
+
+        h1 {
+            text-align: center;
+            color: #7b4f48;
+            margin-bottom: 25px;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            flex: 1;
+            line-height: 1.8;
+            color: #5e453f;
+        }
+
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 4px solid #f8dfe8;
+            box-shadow: 0 10px 20px rgba(148, 95, 88, 0.12);
+        }
+
+        h2 {
+            color: #6d4b45;
+            margin-top: 30px;
+        }
+
+        ul {
+            color: #5e453f;
+            line-height: 1.9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fffdfd;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #f4d8df;
+            padding: 10px 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #f9e4ea;
+            color: #5b3b39;
+        }
+
+        .tool-table img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+        }
+
+        form {
+            background: #fffafc;
+            border: 1px solid #f4d8df;
+            border-radius: 14px;
+            padding: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #5b3b39;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 12px;
+            margin-bottom: 12px;
+            border: 1px solid #e8c8d3;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(135deg, #d98ca6, #8a5a4d);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a {
+            color: #8a5a4d;
+        }
+
+        @media (max-width: 700px) {
+            .intro {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Profil Mahasiswa</h1>
+
+        <div class="intro">
+            <p>Halo! Nama saya <b>Lina Mushlihah</b>. Saya seorang mahasiswa jurusan Teknik Informatika yang tertarik pada pengembangan web dan pemrograman.</p>
+            <img class="profile-img" src="c:\Users\NUHA\Documents\lina kuliah\linapic6.jpeg" alt="Foto Profil">
+        </div>
+
+        <h2>Hobi Saya:</h2>
+        <ul>
+            <li>Membaca</li>
+            <li>Menonton Film</li>
+            <li>Senang-senang</li>
+        </ul>
+
+        <h2>Pendidikan</h2>
+        <table>
+            <tr>
+                <th>Tahun</th>
+                <th>Sekolah</th>
+            </tr>
+            <tr>
+                <td>2022 - 2025</td>
+                <td>SMA IT Ihsanul Fikri Magelang</td>
+            </tr>
+            <tr>
+                <td>2025 - Sekarang</td>
+                <td>Institut Teknologi Sepuluh Nopember</td>
+            </tr>
+        </table>
+
+        <h2>Skillset:</h2>
+        <ul>
+            <li>Administrative Management</li>
+            <li>Academic Writing & Research</li>
+            <li>UI/UX Design</li>
+            <li>Human Resource & Mentoring</li>
+        </ul>
+
+        <h2>ToolSet</h2>
+        <table class="tool-table">
+            <tr>
+                <th>VSCode</th>
+                <th>Figma</th>
+                <th>Canva</th>
+                <th>Microsoft Office</th>
+                <th>Google Chrome</th>
+            </tr>
+            <tr>
+                <td><img src="c:\Users\NUHA\Downloads\vscode.png" alt="vscode"></td>
+                <td><img src="c:\Users\NUHA\Downloads\figma.jpeg" alt="figma"></td>
+                <td><img src="c:\Users\NUHA\Downloads\canva.jpeg" alt="canva"></td>
+                <td><img src="c:\Users\NUHA\Downloads\microsoft.jpeg" alt="microsoft"></td>
+                <td><img src="c:\Users\NUHA\Downloads\chrome.jpeg" alt="chrome"></td>
+            </tr>
+        </table>
+
+        <h2>Portofolio</h2>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Documentation</th>
+            </tr>
+            <tr>
+                <td>Final Project SBD 2025</td>
+                <td><img src="c:\Users\NUHA\Downloads\FPSBD.png" alt="cdm" width="100"></td>
+            </tr>
+            <tr>
+                <td>UI/UX Design Project SuarAman</td>
+                <td><img src="c:\Users\NUHA\Downloads\SuarAman.png" alt="uiux" width="100"></td>
+            </tr>
+            <tr>
+                <td>Project EDA Learning</td>
+                <td><img src="c:\Users\NUHA\Downloads\EDA_MCI.png" alt="eda" width="100"></td>
+            </tr>
+        </table>
+
+        <h2>Kontak Saya</h2>
+        <form>
+            <label>Nama:</label>
+            <input type="text" name="nama">
+
+            <label>Email:</label>
+            <input type="email" name="email">
+
+            <label>Pesan:</label>
+            <textarea name="pesan" rows="4" cols="30"></textarea>
+
+            <input type="submit" value="Kirim">
+        </form>
+
+        <p>Kunjungi <a href="https://github.com/linamushlihah">GitHub</a> saya untuk melihat project.</p>
+    </div>
+</body>
+</html>
