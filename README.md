@@ -1,7 +1,9 @@
 # Pemrograman-Web-B
-## Lina Mushlihah 
-## 5025251063
+Lina Mushlihah 
+5025251063
+
 ---
+
 # Week 1
 ## Pengenalan Materi, Tools, Sistem pengajaran dan Basic Starter
 Main activity : https://fajarbaskoro.blogspot.com/2018/02/pweb-1-1-hosting-dan-domain.html 
@@ -14,6 +16,7 @@ https://www.w3schools.com/whatis/default.asp
 https://repository.unimal.ac.id/view/creators/Abdullah=3ADahlan=3A=3A.html#group_teaching=5Fresource
 
 ---
+
 # Week 2
 ## Eksplorasi dan Implementasi Dasar HTML-CSS
 Main activity : https://fajarbaskoro.blogspot.com/2017/02/pweb-1-pemrograman-web.html
