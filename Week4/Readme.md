@@ -2,8 +2,11 @@
 
 ## Website Profil SMAIT Ihsanul Fikri Mungkid
 ---
+
 Nama : Lina Mushlihah
+
 NRP  : 5025251063
+
 ---
 
 ## 1. Informasi Produk
