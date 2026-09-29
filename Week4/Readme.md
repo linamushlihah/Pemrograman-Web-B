@@ -374,4 +374,5 @@ Output akhir dari project ini adalah:
 ---
 
 source web : https://smaitif-boarding-school.vercel.app
+
 Web sekolah asli : https://smait.ihsanulfikri.sch.id
