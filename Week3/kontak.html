@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak - SMAIT Ihsanul Fikri</title>
+  <meta name="description" content="Hubungi SMAIT Ihsanul Fikri Mungkid.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Logo SMAIT Ihsanul Fikri">
+        <span>SMAIT Ihsanul Fikri</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="jurusan.html">Jurusan</a></li>
+        <li><a href="kontak.html" class="active">Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Hubungi Kami</h1>
+        <p>Punya pertanyaan tentang sekolah? Tulis pesan Anda dan kami akan menindaklanjutinya.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- INFO SEKOLAH -->
+        <div>
+          <h2 class="section-title">Informasi Sekolah</h2>
+          <p class="section-lead">SMAIT Ihsanul Fikri adalah sekolah menengah atas Islam terpadu di bawah naungan Yayasan Tarbiyatul Mukmin Pabelan.</p>
+          <ul class="info-list">
+            <li>
+              <strong>Alamat</strong>
+              Jl. Pabelan 1, Pabelan, Kec. Mungkid, Kab. Magelang, Jawa Tengah
+            </li>
+            <li>
+              <strong>Website resmi</strong>
+              <a href="https://smait.ihsanulfikri.sch.id/" target="_blank" rel="noopener">smait.ihsanulfikri.sch.id</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- FORM -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 SMAIT Ihsanul Fikri Mungkid</p>
+      <p>Rancang ulang untuk keperluan tugas HTML/CSS/JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

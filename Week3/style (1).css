@@ -1,0 +1,484 @@
+/* ==========================================================
+   SMAIT Ihsanul Fikri - Website Tugas HTML/CSS/JS
+   Satu stylesheet untuk semua halaman
+   ========================================================== */
+
+:root {
+  --green: #1b7a2b;
+  --green-dark: #0d4a1b;
+  --green-soft: #eef6e6;
+  --lime: #8cc63f;
+  --yellow: #f7c600;
+  --orange: #f47b20;
+  --ink: #16301b;
+  --muted: #55665a;
+  --line: #dfe8d8;
+  --white: #ffffff;
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-pill: 999px;
+  --shadow: 0 14px 40px rgba(13, 74, 27, 0.10);
+  --nav-h: 76px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; }
+
+h1, h2, h3 { line-height: 1.2; margin: 0 0 0.6em; }
+
+p { margin: 0 0 1em; }
+
+:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin-inline: auto;
+}
+
+.section { padding: 96px 0; }
+.section--tint { background: var(--green-soft); }
+
+.section-title {
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.section-lead {
+  max-width: 60ch;
+  color: var(--muted);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--orange);
+  color: var(--white);
+  font: 600 1rem/1 "Poppins", "Segoe UI", Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.btn:hover { background: #d9660f; transform: translateY(-2px); }
+
+.btn--green { background: var(--green); }
+.btn--green:hover { background: var(--green-dark); }
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--nav-h);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.navbar__inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--green-dark);
+}
+.brand img { height: 48px; width: auto; }
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--ink);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.nav-menu a:hover { background: var(--green-soft); }
+.nav-menu a.active { background: var(--green); color: var(--white); }
+
+.nav-toggle {
+  display: none;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--white);
+  cursor: pointer;
+  padding: 0;
+}
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--green-dark);
+  border-radius: 2px;
+  margin: 0 auto;
+  position: relative;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+.nav-toggle span::before,
+.nav-toggle span::after { content: ""; position: absolute; left: 0; }
+.nav-toggle span::before { top: -7px; }
+.nav-toggle span::after { top: 7px; }
+.nav-toggle[aria-expanded="true"] span { background: transparent; }
+.nav-toggle[aria-expanded="true"] span::before { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span::after { transform: translateY(-7px) rotate(-45deg); }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  min-height: calc(100vh - var(--nav-h));
+  min-height: calc(100svh - var(--nav-h));
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  background:
+    linear-gradient(100deg, rgba(8, 44, 16, 0.88) 0%, rgba(8, 44, 16, 0.62) 55%, rgba(8, 44, 16, 0.35) 100%),
+    url("images/sekolah.jpg") center / cover no-repeat;
+  background-color: var(--green-dark);
+}
+
+.hero__content { padding: 80px 0; max-width: 720px; }
+
+.hero__tag {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-bottom: 28px;
+  border-radius: var(--radius-pill);
+  background: var(--yellow);
+  color: var(--green-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 5.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  margin-bottom: 28px;
+}
+
+.hero p {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  max-width: 42ch;
+  margin-bottom: 36px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* ---------- Two column layout ---------- */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 64px;
+  align-items: center;
+}
+.split--reverse { grid-template-columns: 1.15fr 1fr; }
+
+.photo-frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--green-soft);
+}
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+.photo-frame--portrait { aspect-ratio: 3 / 4; max-width: 420px; }
+.photo-frame--portrait img { object-position: center bottom; }
+.photo-frame--wide { aspect-ratio: 16 / 10; }
+
+.quote-mark {
+  width: 56px;
+  height: 6px;
+  border-radius: 6px;
+  background: var(--yellow);
+  margin-bottom: 20px;
+}
+
+.signature {
+  margin-top: 24px;
+  padding-left: 16px;
+  border-left: 4px solid var(--yellow);
+}
+.signature strong { display: block; color: var(--green-dark); }
+.signature span { color: var(--muted); font-size: 0.92rem; }
+
+/* ---------- Visi & Misi tabs ---------- */
+.tabs {
+  display: inline-flex;
+  gap: 6px;
+  padding: 6px;
+  margin: 12px 0 32px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+}
+
+.tab-btn {
+  padding: 12px 36px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--muted);
+  font: 600 1rem/1 "Poppins", "Segoe UI", Arial, sans-serif;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.tab-btn:hover { color: var(--green-dark); }
+.tab-btn.active { background: var(--green); color: var(--white); }
+
+.tab-panel {
+  display: none;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.tab-panel.active { display: block; animation: panelIn 0.35s ease; }
+
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.visi-text {
+  font-size: clamp(1.3rem, 2.6vw, 1.9rem);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--green-dark);
+  margin: 0;
+}
+
+.misi-list {
+  margin: 0;
+  padding-left: 1.3em;
+}
+.misi-list li { margin-bottom: 14px; padding-left: 6px; }
+.misi-list li::marker { color: var(--orange); }
+.misi-list li:last-child { margin-bottom: 0; }
+
+/* ---------- Page header (jurusan & kontak) ---------- */
+.page-header {
+  padding: 84px 0 76px;
+  color: var(--white);
+  background:
+    linear-gradient(120deg, rgba(13, 74, 27, 0.96), rgba(27, 122, 43, 0.90)),
+    url("images/sekolah-aerial.jpg") center / cover no-repeat;
+  background-color: var(--green-dark);
+}
+.page-header h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.page-header p { max-width: 56ch; margin: 0; color: rgba(255, 255, 255, 0.9); }
+.page-header::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 6px;
+  margin-top: 28px;
+  border-radius: 6px;
+  background: var(--yellow);
+}
+
+/* ---------- Jurusan cards ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.card {
+  padding: 36px;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 6px solid var(--green);
+  box-shadow: var(--shadow);
+}
+.card--tahfidz { border-top-color: var(--yellow); }
+
+.card h2 { font-size: 1.5rem; color: var(--green-dark); }
+.card p { color: var(--muted); }
+.card ul { margin: 0; padding-left: 1.2em; }
+.card li { margin-bottom: 6px; }
+.card li::marker { color: var(--orange); }
+
+/* ---------- Table ---------- */
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: var(--white);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+th, td { padding: 16px 22px; text-align: left; }
+thead th { background: var(--green); color: var(--white); font-weight: 600; }
+tbody tr:nth-child(even) { background: var(--green-soft); }
+tbody tr + tr td { border-top: 1px solid var(--line); }
+td:first-child, th:first-child { width: 72px; }
+
+.table-note {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ---------- Kontak ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.info-list { list-style: none; margin: 24px 0 0; padding: 0; }
+.info-list li {
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-radius: var(--radius-md);
+  background: var(--green-soft);
+}
+.info-list strong { display: block; color: var(--green-dark); }
+
+.contact-form {
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.form-group { margin-bottom: 22px; }
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--green-dark);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  background: var(--white);
+  color: var(--ink);
+  font: 400 1rem/1.5 "Poppins", "Segoe UI", Arial, sans-serif;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-group textarea { min-height: 150px; resize: vertical; }
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--green);
+  box-shadow: 0 0 0 4px rgba(27, 122, 43, 0.15);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  background: var(--green-dark);
+  border-top: 6px solid var(--yellow);
+}
+.footer p { margin: 0; }
+.footer p:first-child { color: var(--white); font-weight: 600; }
+.footer p + p { font-size: 0.9rem; margin-top: 4px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .section { padding: 72px 0; }
+  .split,
+  .split--reverse,
+  .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+  .photo-frame--portrait { margin-inline: auto; width: 100%; max-width: 380px; }
+}
+
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+
+  .nav-menu {
+    position: absolute;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 16px 4%;
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 16px 30px rgba(13, 74, 27, 0.12);
+    display: none;
+  }
+  .nav-menu.open { display: flex; }
+  .nav-menu a { padding: 14px 20px; }
+
+  .card-grid { grid-template-columns: 1fr; }
+  .card, .contact-form, .tab-panel { padding: 26px; }
+  .tabs { display: flex; }
+  .tab-btn { flex: 1; padding-inline: 16px; }
+  .brand span { font-size: 0.95rem; }
+}
+
+@media (max-width: 400px) {
+  .brand span { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
