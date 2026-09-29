@@ -2,6 +2,11 @@
 
 Implementasi Materi HTML, CSS, dan Javascript untuk pembuatan web sekolah
 
+<img width="1903" height="901" alt="image" src="https://github.com/user-attachments/assets/8b8a7f73-60e1-4a83-84b5-63485906a4aa" />
+
+<img width="1896" height="877" alt="image" src="https://github.com/user-attachments/assets/778497b9-2ae5-4d35-b4ff-12687afa4f88" />
+
+
 ## Fitur
 
 - Halaman Home
