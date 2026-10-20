@@ -2,6 +2,9 @@
 
 Project latihan Pemrograman Web untuk membuat form registrasi mahasiswa menggunakan HTML, CSS, dan JavaScript.
 
+<img width="771" height="849" alt="image" src="https://github.com/user-attachments/assets/1802ea4b-27c6-4354-a683-7c3006c318d7" />
+
+
 ## Fitur JavaScript
 
 - **Rekomendasi Nama (Autocomplete):** Menampilkan rekomendasi nama mahasiswa berdasarkan teks yang diketik pengguna.
@@ -36,7 +39,3 @@ registrasi-mahasiswa/
 5. Ketika tombol Daftar ditekan, event `submit` menjalankan validasi setiap kolom.
 6. Jika semua kolom terisi, data registrasi ditampilkan sebagai konfirmasi pada halaman.
 7. Tombol Reset mengembalikan form ke kondisi awal.
-
-## Catatan
-
-Project ini merupakan latihan JavaScript dasar dengan data contoh yang dikelola di sisi browser. Data registrasi belum disimpan secara permanen dan belum terhubung ke backend atau database.
