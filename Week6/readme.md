@@ -2,7 +2,7 @@
 
 Project latihan Pemrograman Web untuk membuat form registrasi mahasiswa menggunakan HTML, CSS, dan JavaScript.
 
-<img width="771" height="849" alt="image" src="https://github.com/user-attachments/assets/1802ea4b-27c6-4354-a683-7c3006c318d7" />
+<img width="551" height="649" alt="image" src="https://github.com/user-attachments/assets/1802ea4b-27c6-4354-a683-7c3006c318d7" />
 
 
 ## Fitur JavaScript
