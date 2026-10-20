@@ -6,6 +6,25 @@
 Praktik membuat tampilan Front end CSS, melalui implementasi ini mengetahui hubungan antara HTML sebagai struktur dan CSS sebagai pengatur layout, visual, komponen, serta responsive design.
 
 --
+## Fitur
+- Menambahkan data mahasiswa
+- Mengedit dan menghapus data
+- Mencari data mahasiswa
+- Pagination
+- Responsive layout
+
+## Teknologi
+- HTML
+- CSS
+- JavaScript
+
+## Struktur File
+```
+student-management/
+├── index.html
+├── style.css
+└── script.js
+```
 
 ## Stuktur Arsitektur Frondend
 
@@ -31,6 +50,7 @@ FRONTEND
     └── Interaksi dan data
 ```
 
+link deploy : https://student-management-frontend-psi-six.vercel.app/ 
 
 
 
