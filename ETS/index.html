@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beranda - Perpustakaan</title>
+  <meta name="description" content=" Website LibraryReg - Informasi dan Pendaftaran anggota perpustakaan">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="brand">
+        <img src="./image/logo.png" alt="Logo Perpustakaan">
+        <span>LibraryReg - Perpustakaan ITS</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li><a href="formreg.html">FormReg</a></li>
+        <li><a href="memberlist.html">Memberlist</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__tag">Gerbang ilmu, Jendela masa depan</span>
+          <h1>Welcome<br>perpustakaan ITS</h1>
+          <p>Akses ribuan koleksi buku, jurnal, E-book, dan 
+            sumber referensi untuk mendukung proses belajar, penelitian dan pengembangan diri</p>
+          <a href="#layanan" class="btn">Daftar Anggota</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Informasi layanan -->
+    <section class="section" id="layanan">
+      <div class="container split">
+        <div class="photo-frame photo-frame--portrait">
+          <img src="./image/kepala-sekolah.jpg" alt="layanan-perpus">
+        </div>
+
+        <div>
+          <div class="quote-mark"></div>
+          <h2 class="section-title"></h2>
+          <p>Lihat selengkapanya</p>
+          <p>Kunjungi website https://www.its.ac.id/perpustakaan/ </p>
+          <div class="signature">
+            <strong>Perpustakan ITS</strong>
+            <span>LibraryReg</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistik ilustratif jumlahkoleksi dan anggota -->
+    <section class="section section--tint" id="tentang">
+      <div class="container split split--reverse">
+        <div>
+          <div class="quote-mark"></div>
+          <h2 class="section-title">Jumlah koleksi dan Anggota</h2>
+          <p>50.000++ koleksi</p>
+          <p>3.000++ sudah mendaftar sebagai anggota</p>
+        </div>
+        <div class="photo-frame photo-frame--wide">
+          <img src="./image/sekolah-aerial.jpg" alt="Statistik">
+        </div>
+      </div>
+    </section>
+
+    <!-- KEunggulan dan Fasilitas -->
+    <section class="section" id="keunggulan-fasilitas">
+      <div class="container">
+        <h2 class="section-title">Keunggulan &amp; Fasilitas</h2>
+        <p class="section-lead">Benefit keanggotaan</p>
+
+        <div class="tabs" role="tablist" aria-label="Pilih Visi atau Misi">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-target="panel-visi">Visi</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-target="panel-misi">Misi</button>
+        </div>
+
+        <div class="tab-panel active" id="panel-visi" role="tabpanel">
+          <p class="visi-text">Koleksi lengkap - Akses untuk semua - Layanan Digital - Ruang Nyaman</p>
+        </div>
+
+        <div class="tab-panel" id="panel-misi" role="tabpanel">
+          <ul class="misi-list">
+            <li>Koleksi lengkap - Lebih dari 50.000 koleksi buku dan e-book</li>
+            <li>Akses untuk semua - Mahasiswa, Dosen, dan Tenaga Kependidikan</li>
+            <li>Layanan Digital - Akses katalog online dan e-resource</li>
+            <li>Ruang Nyaman - Fasilitas belajar dan diskusi yang nyaman</li>
+            <li>Discover more - kunjungi perpustakaan dan daftarkan dirimu menjadi anggota!</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© Hubungi +6218900 </p>
+      <p>Jam operasional layanan: 07.00 - 17.00</p>
+      <p>Informasi selengkapnya, kunjungi https://www.its.ac.id/perpustakaan/ </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
