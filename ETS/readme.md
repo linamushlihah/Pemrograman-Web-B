@@ -70,72 +70,59 @@ Website LibraryReg
 
 ### Functional Requirements
 
-#### FR-01 — Beranda
+#### FR-01 — Landing page
 
 Halaman Beranda harus menyediakan:
 
 * Header dan navigation bar.
-* Logo sekolah.
+* Logo Perpustakaan
 * Hero section.
-* Nama sekolah.
-* Tagline **"Lead Globally Act Locally"**.
-* Foto sekolah.
-* Sambutan kepala sekolah.
-* Informasi singkat mengenai sekolah.
-* Visi dan Misi.
-* Footer.
+* Judul website.
+* Informasi layanan perpustakaan.
+* Keunggulan dan fasilitas perpustakaan.
+* Statistik ilustratif jumlah koleksi dan anggota.
+* Footer berisi kontak dan informasi jam layanan
 
 #### FR-02 — Navigasi
 
 Navigation bar harus menyediakan akses menuju:
 
 * Beranda
-* Jurusan
-* Kontak
+* Tentang perpustakaan
+* Layanan
+* Daftar anggota
+* Pendaftaran Anggota
+* Login Petugas
 
 Navigasi juga harus dapat menyesuaikan tampilan pada perangkat mobile.
 
-#### FR-03 — Informasi Sekolah
+#### FR-03 — Form Pendaftaran
 
-Website menampilkan informasi dasar mengenai sekolah, termasuk:
+Website menerima input data terkait form pendaftaran, diantaranya:
 
-* Foto sekolah.
-* Informasi singkat sekolah.
-* Foto kepala sekolah.
-* Sambutan kepala sekolah.
-* Visi sekolah.
-* Misi sekolah.
+* Nama lengkap
+* NIM/NIP
+* Program studi
+* Alamat
+* Nomor telepon
+* Email
+* Jenis keanggotaan: mahasiswa, dosen, atau tenaga kependidikan
 
-#### FR-04 — Jurusan
+Formulir memiliki validasi kolom wajib, format email, dan keunikan nomor induk. Setelah berhasil, data ditambahkan ke daftar anggota pada sisi front end.
+
+
+#### FR-04 — Daftar Anggota
 
 Halaman Jurusan harus menampilkan:
 
-* Nama jurusan.
-* Deskripsi masing-masing jurusan.
-* Informasi program reguler dan tahfidz.
-* Daftar informasi menggunakan list.
-* Tabel jumlah siswa.
-
-Jurusan yang ditampilkan meliputi:
-
-* IPA Reguler
-* IPA Tahfidz
-* IPS Reguler
-* IPS Tahfidz
-
-#### FR-05 — Kontak
-
-Halaman Kontak harus menampilkan informasi kontak sekolah serta menyediakan form yang terdiri dari:
-
-* Nama.
-* Email.
-* Pesan.
-* Tombol kirim.
-
-Form dapat memberikan feedback kepada pengguna setelah tombol kirim ditekan.
-
-**Catatan:** Pada versi saat ini, form masih berupa simulasi dan belum terhubung dengan database atau layanan email.
-
+* Menampilkan tabel daftar anggota.
+* Mencari anggota berdasarkan nama atau NIM/NIP.
+* Melihat detail anggota.
+* Mengedit data anggota.
+* Menghapus data dengan dialog konfirmasi.
+* Menampilkan notifikasi keberhasilan atau kesalahan.
+* Menyimpan data pada localStorage agar tetap tersedia setelah halaman dimuat ulang di browser yang sama.
+  
 ---
 
 ### Non-Functional Requirements
@@ -157,7 +144,7 @@ Website harus dapat menyesuaikan tampilan pada:
 
 #### Visual
 
-// Website menggunakan  dengan warna utama hijau dan penggunaan foto sekolah sebagai elemen visual.
+Informasi website mudah dibaca  dan tujuan penggunaannya tercapai. 
 
 #### Performance
 
@@ -205,8 +192,9 @@ Website tidak menggunakan backend atau database pada versi saat ini.
 
 
 
+--- 
 
-# 9. Struktur Project
+### Struktur Project
 
 ```text
 Week3/
@@ -303,23 +291,7 @@ Ini mirip konsep **"Pengembangan Berikutnya"** pada PRD dosen, jadi fitur yang b
     Sekolah
 ```
 
-### Contoh Flow Calon Siswa
-
-```text
-Beranda
-   ↓
-Informasi Sekolah
-   ↓
-Jurusan
-   ↓
-Melihat Pilihan Jurusan
-   ↓
-Kontak
-```
-
----
-
-# 12. Acceptance Criteria
+## Acceptance Criteria
 
 Website dinyatakan memenuhi kebutuhan apabila:
 
@@ -343,7 +315,7 @@ Website dinyatakan memenuhi kebutuhan apabila:
 
 ---
 
-# 13. Output Project
+## Output Project
 
 Output akhir dari project ini adalah:
 
