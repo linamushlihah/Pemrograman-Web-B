@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, Helvetica, sans-serif; color: #1f2937; background: #f3f6fb; padding: 32px 16px; }
+.container { width: 100%; max-width: 680px; margin: 0 auto; }
+.card { background: #fff; padding: 32px; border-radius: 18px; box-shadow: 0 12px 35px rgba(31,41,55,.08); }
+.eyebrow { margin: 0 0 10px; color: #2563eb; font-size: 12px; font-weight: 700; letter-spacing: 1.4px; }
+h1 { margin: 0; font-size: clamp(25px,4vw,34px); line-height: 1.2; }
+.intro { margin: 12px 0 24px; color: #64748b; line-height: 1.6; }
+.status { margin-bottom: 18px; padding: 11px 13px; border-radius: 9px; background: #eff6ff; color: #1d4ed8; font-size: 14px; }
+.status.error { background: #fef2f2; color: #b91c1c; }
+.field { margin-bottom: 17px; }
+label { display: block; margin-bottom: 7px; font-size: 14px; font-weight: 700; }
+select { width: 100%; padding: 12px 13px; border: 1px solid #cbd5e1; border-radius: 9px; background: #fff; color: #1f2937; font-size: 15px; }
+select:disabled { background: #f1f5f9; color: #94a3b8; cursor: not-allowed; }
+button { width: 100%; margin-top: 4px; padding: 13px 16px; border: 0; border-radius: 9px; background: #2563eb; color: white; font-size: 15px; font-weight: 700; cursor: pointer; }
+button:hover:not(:disabled) { background: #1d4ed8; }
+button:disabled { background: #94a3b8; cursor: not-allowed; }
+.result { margin-top: 24px; padding: 22px; border: 1px solid #bfdbfe; border-radius: 12px; background: #f8fbff; }
+.result-label { margin: 0; color: #64748b; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; }
+.result h2 { margin: 5px 0 18px; color: #1d4ed8; font-size: 36px; }
+.result-details p { display: flex; justify-content: space-between; gap: 16px; margin: 0; padding: 10px 0; border-top: 1px solid #e2e8f0; }
+.result-details span { color: #64748b; }
+.result-details strong { text-align: right; }
+.footnote { margin: 22px 0 0; color: #64748b; font-size: 12px; line-height: 1.6; }
+@media (max-width: 520px) { .card { padding: 22px 18px; } .result-details p { flex-direction: column; gap: 4px; } .result-details strong { text-align: left; } }
