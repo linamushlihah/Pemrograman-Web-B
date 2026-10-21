@@ -181,6 +181,15 @@ Website tidak menggunakan backend atau database pada versi saat ini.
 
 ## 3. Design UI Landing Page
 
+<img width="1869" height="886" alt="image" src="https://github.com/user-attachments/assets/82b88971-8e00-4333-8cec-e34453ceacef" />
+
+<img width="1717" height="885" alt="image" src="https://github.com/user-attachments/assets/f04a2618-d695-4455-ad4b-9f9802ea4f65" />
+
+<img width="890" height="430" alt="image" src="https://github.com/user-attachments/assets/e04862c9-2e0f-4d38-9e9a-546d45f7403e" />
+
+<img width="886" height="449" alt="image" src="https://github.com/user-attachments/assets/3d53db9b-58fc-4639-8d70-e0b6fc13f030" />
+
+<img width="863" height="438" alt="image" src="https://github.com/user-attachments/assets/003ac123-a6f2-47c2-b4c4-6537b67e5e5b" />
 
 
 
