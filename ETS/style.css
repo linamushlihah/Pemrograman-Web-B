@@ -240,7 +240,7 @@ p { margin: 0 0 1em; }
 .signature strong { display: block; color: var(--blue-dark); }
 .signature span { color: var(--muted); font-size: 0.92rem; }
 
-/* ---------- Visi & Misi tabs ---------- */
+/* ---------- Keunggulan & Fasilitas tabs ---------- */
 .tabs {
   display: inline-flex;
   gap: 6px;
@@ -295,104 +295,6 @@ p { margin: 0 0 1em; }
 .misi-list li::marker { color: var(--orange); }
 .misi-list li:last-child { margin-bottom: 0; }
 
-/* ---------- Page header (jurusan & kontak) ---------- */
-.page-header {
-  padding: 84px 0 76px;
-  color: var(--white);
-  background:
-    linear-gradient(120deg, rgba(13, 74, 27, 0.96), rgba(27, 122, 43, 0.90)),
-    url("./image/sekolah-aerial.jpg") center / cover no-repeat;
-  background-color: var(--blue-dark);
-}
-.page-header h1 {
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
-  font-weight: 800;
-  margin-bottom: 16px;
-}
-.page-header p { max-width: 56ch; margin: 0; color: rgba(255, 255, 255, 0.9); }
-.page-header::after {
-  content: "";
-  display: block;
-  width: 72px;
-  height: 6px;
-  margin-top: 28px;
-  border-radius: 6px;
-  background: var(--yellow);
-}
-
-/* ---------- Jurusan cards ---------- */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-}
-
-.card {
-  padding: 36px;
-  border-radius: var(--radius-lg);
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-top: 6px solid var(--blue);
-  box-shadow: var(--shadow);
-}
-.card--tahfidz { border-top-color: var(--yellow); }
-
-.card h2 { font-size: 1.5rem; color: var(--blue-dark); }
-.card p { color: var(--muted); }
-.card ul { margin: 0; padding-left: 1.2em; }
-.card li { margin-bottom: 6px; }
-.card li::marker { color: var(--orange); }
-
-/* ---------- Table ---------- */
-.table-wrap {
-  overflow-x: auto;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  background: var(--white);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 480px;
-}
-th, td { padding: 16px 22px; text-align: left; }
-thead th { background: var(--blue); color: var(--white); font-weight: 600; }
-tbody tr:nth-child(even) { background: var(--blue-soft); }
-tbody tr + tr td { border-top: 1px solid var(--line); }
-td:first-child, th:first-child { width: 72px; }
-
-.table-note {
-  margin-top: 16px;
-  font-size: 0.9rem;
-  color: var(--muted);
-  font-style: italic;
-}
-
-/* ---------- Kontak ---------- */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 56px;
-  align-items: start;
-}
-
-.info-list { list-style: none; margin: 24px 0 0; padding: 0; }
-.info-list li {
-  padding: 16px 20px;
-  margin-bottom: 12px;
-  border-radius: var(--radius-md);
-  background: var(--blue-soft);
-}
-.info-list strong { display: block; color: var(--blue-dark); }
-
-.contact-form {
-  padding: 40px;
-  border-radius: var(--radius-lg);
-  background: var(--white);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
 }
 
 .form-group { margin-bottom: 22px; }
