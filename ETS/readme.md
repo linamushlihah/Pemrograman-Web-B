@@ -193,11 +193,11 @@ Website tidak menggunakan backend atau database pada versi saat ini.
 
 ## 4. Update design UI Landing page & Implementasi web deployment
 
-<img width="947" height="448" alt="image" src="https://github.com/user-attachments/assets/4b30461b-66ab-4311-a439-e4b160979e43" />
+<img width="950" height="448" alt="image" src="https://github.com/user-attachments/assets/a4d26d5a-5507-48c6-941f-e2de261a258b" />
 
 <img width="946" height="449" alt="image" src="https://github.com/user-attachments/assets/43dc3a37-dc02-49fb-8eea-750ab2d009d1" />
 
-<img width="950" height="448" alt="image" src="https://github.com/user-attachments/assets/a4d26d5a-5507-48c6-941f-e2de261a258b" />
+<img width="947" height="448" alt="image" src="https://github.com/user-attachments/assets/4b30461b-66ab-4311-a439-e4b160979e43" />
 
 <img width="944" height="445" alt="image" src="https://github.com/user-attachments/assets/43441b69-c2c8-495a-803e-0cd60a8bbb20" />
 
