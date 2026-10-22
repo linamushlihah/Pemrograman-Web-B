@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pendaftaran Anggota | LibraryReg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="index.html">
+        <img src="image/logo.png" alt="">
+        <span>
+          <b>LibraryReg</b>
+          <small>Perpustakaan Universitas</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+      </button>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#tentang">Tentang</a></li>
+          <li><a href="index.html#layanan">Layanan</a></li>
+          <li><a class="active" href="formreg.html">Pendaftaran</a></li>
+          <li><a href="memberlist.html">Data Anggota</a></li>
+          <li><a class="nav-login" href="login.html">Login Petugas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-bg">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span>›</span>
+        <span>Pendaftaran Anggota</span>
+      </div>
+
+      <div class="form-layout">
+        <aside class="form-aside">
+          <span class="eyebrow">GABUNG BERSAMA KAMI</span>
+          <h1>Bergabung Menjadi Anggota</h1>
+          <p>Lengkapi data untuk memulai pendaftaran dan mengenal layanan perpustakaan.</p>
+          <div class="aside-art">📚</div>
+          <ul class="benefit-list">
+            <li>✓ Informasi layanan perpustakaan</li>
+            <li>✓ Akses sumber belajar digital*</li>
+            <li>✓ Dukungan kegiatan akademik</li>
+          </ul>
+          <small>*Hak akses mengikuti ketentuan perpustakaan.</small>
+        </aside>
+
+        <section class="form-card">
+          <div class="form-heading">
+            <span class="eyebrow">FORMULIR ONLINE</span>
+            <h2>Formulir Pendaftaran Anggota</h2>
+            <p>Isi data dengan benar. Kolom bertanda <b class="required">*</b> wajib diisi.</p>
+          </div>
+
+          <form id="registrationForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="nama">Nama Lengkap <b class="required">*</b></label>
+                <input id="nama" name="nama" autocomplete="name" placeholder="Masukkan nama lengkap" required>
+              </div>
+              <div class="form-group">
+                <label for="nomorInduk">NIM/NIP <b class="required">*</b></label>
+                <input id="nomorInduk" name="nomorInduk" placeholder="Masukkan NIM atau NIP" required>
+              </div>
+              <div class="form-group">
+                <label for="programStudi">Program Studi / Unit <b class="required">*</b></label>
+                <input id="programStudi" name="programStudi" placeholder="Contoh: Informatika" required>
+              </div>
+              <div class="form-group">
+                <label for="jenis">Jenis Keanggotaan <b class="required">*</b></label>
+                <select id="jenis" name="jenis" required>
+                  <option value="">Pilih jenis keanggotaan</option>
+                  <option>Mahasiswa</option>
+                  <option>Dosen</option>
+                  <option>Tenaga Kependidikan</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="telepon">Nomor Telepon <b class="required">*</b></label>
+                <input id="telepon" name="telepon" type="tel" autocomplete="tel" placeholder="08xxxxxxxxxx" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email <b class="required">*</b></label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="nama@email.com" required>
+              </div>
+              <div class="form-group form-group--full">
+                <label for="alamat">Alamat <b class="required">*</b></label>
+                <textarea id="alamat" name="alamat" rows="3" autocomplete="street-address" placeholder="Masukkan alamat lengkap" required></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn--light" type="reset">Reset</button>
+              <button class="btn" type="submit">➤ Daftar Sekarang</button>
+            </div>
+            <p class="form-note">Data tersimpan pada browser ini (localStorage), bukan dikirim ke server.</p>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="container footer-simple">
+      © 2026 LibraryReg · Proyek pembelajaran
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Petugas | LibraryReg</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="index.html">
+        <img src="image/logo.png" alt="">
+        <span>
+          <b>LibraryReg</b>
+          <small>Perpustakaan Universitas</small>
+        </span>
+      </a>
+      <a class="text-link" href="index.html">← Kembali ke Beranda</a>
+    </div>
+  </header>
+
+  <main class="login-wrap">
+    <section class="login-card">
+      <span class="login-symbol">▣</span>
+      <span class="eyebrow">AREA PETUGAS</span>
+      <h1>Login Petugas</h1>
+      <p>Halaman simulasi antarmuka login untuk kebutuhan demonstrasi.</p>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input id="username" required placeholder="Masukkan username" autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input id="password" type="password" required placeholder="Masukkan password" autocomplete="current-password">
+        </div>
+        <button class="btn btn--full" type="submit">Login</button>
+      </form>
+
+      <p class="form-note">Login belum terhubung dengan autentikasi backend. Untuk demo, gunakan tombol menuju halaman data anggota.</p>
+      <a class="text-link" href="memberlist.html">Buka panel data anggota →</a>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

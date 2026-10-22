@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Anggota | LibraryReg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="admin-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="index.html">
+        <img src="image/logo.png" alt="">
+        <span>
+          <b>LibraryReg</b>
+          <small>Admin Perpustakaan</small>
+        </span>
+      </a>
+      <p class="sidebar-label">MENU UTAMA</p>
+      <a href="index.html">⌂ &nbsp; Beranda</a>
+      <a href="formreg.html">♧ &nbsp; Pendaftaran</a>
+      <a class="active" href="memberlist.html">▦ &nbsp; Data Anggota</a>
+      <a href="index.html#layanan">▣ &nbsp; Layanan</a>
+      <a href="login.html">⚙ &nbsp; Login Petugas</a>
+      <a class="sidebar-logout" href="index.html">↪ &nbsp; Kembali ke Website</a>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Buka navigasi">☰</button>
+        <span>Panel Pengelolaan Anggota</span>
+        <a href="index.html">Lihat Website ↗</a>
+      </div>
+
+      <div class="admin-content">
+        <div class="page-title-row">
+          <div>
+            <span class="eyebrow">ADMINISTRASI PERPUSTAKAAN</span>
+            <h1>Data Anggota</h1>
+            <p>Kelola data pendaftaran anggota perpustakaan.</p>
+          </div>
+          <a class="btn" href="formreg.html">＋ Tambah Anggota</a>
+        </div>
+
+        <div class="admin-stats">
+          <article>
+            <span>Total Anggota</span>
+            <strong id="totalMembers">0</strong>
+          </article>
+          <article>
+            <span>Mahasiswa</span>
+            <strong id="totalStudents">0</strong>
+          </article>
+          <article>
+            <span>Dosen</span>
+            <strong id="totalLecturers">0</strong>
+          </article>
+          <article>
+            <span>Tenaga Kependidikan</span>
+            <strong id="totalStaff">0</strong>
+          </article>
+        </div>
+
+        <section class="table-card">
+          <div class="table-tools">
+            <label class="search-box">
+              <span>⌕</span>
+              <input id="searchMember" type="search" placeholder="Cari nama, NIM/NIP, email...">
+            </label>
+            <select id="filterJenis" aria-label="Filter jenis keanggotaan">
+              <option value="">Semua Jenis</option>
+              <option>Mahasiswa</option>
+              <option>Dosen</option>
+              <option>Tenaga Kependidikan</option>
+            </select>
+            <select id="sortMembers" aria-label="Urutkan data">
+              <option value="newest">Terbaru</option>
+              <option value="name">Nama A–Z</option>
+            </select>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Nama Anggota</th>
+                  <th>NIM/NIP</th>
+                  <th>Program Studi / Unit</th>
+                  <th>Jenis</th>
+                  <th>No. Telepon</th>
+                  <th>Email</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="memberRows"></tbody>
+            </table>
+          </div>
+
+          <div class="table-footer">
+            <span id="tableInfo">Menampilkan 0 anggota</span>
+            <button id="clearDemo" class="btn btn--light btn--small" type="button">Hapus Data Demo</button>
+          </div>
+          <p class="form-note">Data dikelola di browser ini. Tombol hapus data demo hanya menghapus data contoh, bukan data pendaftaran baru.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <dialog id="memberDialog" class="detail-dialog">
+    <form method="dialog">
+      <button class="dialog-close" aria-label="Tutup">×</button>
+    </form>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
