@@ -181,6 +181,9 @@ Website tidak menggunakan backend atau database pada versi saat ini.
 
 ## 3. Design UI Landing Page
 
+<img width="1440" height="2876" alt="Untitled" src="https://github.com/user-attachments/assets/f5765439-e157-4f48-a54d-8643f82e28b8" />
+link figma : https://www.figma.com/design/etUIQXuRdJ8GUN8AXFMx5C/Untitled?node-id=0-1&t=cbxj5YuOD6LfpUan-1 
+
 <img width="1869" height="886" alt="image" src="https://github.com/user-attachments/assets/82b88971-8e00-4333-8cec-e34453ceacef" />
 
 <img width="1717" height="885" alt="image" src="https://github.com/user-attachments/assets/f04a2618-d695-4455-ad4b-9f9802ea4f65" />
