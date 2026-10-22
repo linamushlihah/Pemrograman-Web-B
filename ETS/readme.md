@@ -191,6 +191,29 @@ Website tidak menggunakan backend atau database pada versi saat ini.
 
 <img width="863" height="438" alt="image" src="https://github.com/user-attachments/assets/003ac123-a6f2-47c2-b4c4-6537b67e5e5b" />
 
+## 4. Update design UI Landing page & Implementasi web deployment
+
+<img width="947" height="448" alt="image" src="https://github.com/user-attachments/assets/4b30461b-66ab-4311-a439-e4b160979e43" />
+
+<img width="946" height="449" alt="image" src="https://github.com/user-attachments/assets/43dc3a37-dc02-49fb-8eea-750ab2d009d1" />
+
+<img width="950" height="448" alt="image" src="https://github.com/user-attachments/assets/a4d26d5a-5507-48c6-941f-e2de261a258b" />
+
+<img width="944" height="445" alt="image" src="https://github.com/user-attachments/assets/43441b69-c2c8-495a-803e-0cd60a8bbb20" />
+
+<img width="949" height="445" alt="image" src="https://github.com/user-attachments/assets/42287823-3c82-4439-b3c1-56fabbe18c95" />
+
+<img width="948" height="449" alt="image" src="https://github.com/user-attachments/assets/88e47f76-14ba-40ff-9d10-2802deade5c5" />
+
+<img width="948" height="448" alt="image" src="https://github.com/user-attachments/assets/663dd6c6-1a0d-4426-a992-171af5ec8fce" />
+
+<img width="947" height="448" alt="image" src="https://github.com/user-attachments/assets/a4788219-1c65-4629-b5c8-7e8982310c48" />
+
+<img width="947" height="448" alt="image" src="https://github.com/user-attachments/assets/bd99840d-0bf5-4145-9358-8a13333b4a99" />
+
+web deploy : https://lybraryreg-063.vercel.app/login.html 
+
+
 
 
 
