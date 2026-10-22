@@ -73,7 +73,6 @@ Website LibraryReg
 #### FR-01 — Landing page
 
 Halaman Beranda harus menyediakan:
-
 * Header dan navigation bar.
 * Logo Perpustakaan
 * Hero section.
@@ -86,7 +85,6 @@ Halaman Beranda harus menyediakan:
 #### FR-02 — Navigasi
 
 Navigation bar harus menyediakan akses menuju:
-
 * Beranda
 * Tentang perpustakaan
 * Layanan
@@ -99,7 +97,6 @@ Navigasi juga harus dapat menyesuaikan tampilan pada perangkat mobile.
 #### FR-03 — Form Pendaftaran
 
 Website menerima input data terkait form pendaftaran, diantaranya:
-
 * Nama lengkap
 * NIM/NIP
 * Program studi
@@ -114,7 +111,6 @@ Formulir memiliki validasi kolom wajib, format email, dan keunikan nomor induk. 
 #### FR-04 — Daftar Anggota
 
 Halaman Jurusan harus menampilkan:
-
 * Menampilkan tabel daftar anggota.
 * Mencari anggota berdasarkan nama atau NIM/NIP.
 * Melihat detail anggota.
@@ -128,51 +124,40 @@ Halaman Jurusan harus menampilkan:
 ### Non-Functional Requirements
 
 #### Responsive
-
 Website harus dapat menyesuaikan tampilan pada:
-
 * Desktop
 * Tablet
 * Mobile
 
 #### Usability
-
 * Navigasi mudah dipahami.
 * Informasi disusun berdasarkan halaman yang jelas.
 * Tombol dan link dapat digunakan dengan mudah.
 * Teks dapat dibaca dengan nyaman.
 
 #### Visual
-
 Informasi website mudah dibaca  dan tujuan penggunaannya tercapai. 
 
 #### Performance
-
 Website dibuat menggunakan HTML, CSS, dan JavaScript tanpa framework sehingga dapat dijalankan secara langsung melalui browser.
 
 #### Accessibility
-
 * Setiap gambar memiliki `alt`.
 * Struktur heading digunakan secara berurutan.
 * Kontras warna diperhatikan agar teks tetap mudah dibaca.
 
----
-
 ### Teknologi yang Digunakan
 
 #### Frontend
-
 * HTML5
 * CSS3
 * JavaScript
 
 #### Version Control
-
 * Git
 * GitHub
 
 #### Deployment
-
 * Vercel
 
 Website tidak menggunakan backend atau database pada versi saat ini.
@@ -181,10 +166,12 @@ Website tidak menggunakan backend atau database pada versi saat ini.
 
 ## 3. Design UI Landing Page
 
-<img width="370" height="776" alt="Untitled" src="https://github.com/user-attachments/assets/f5765439-e157-4f48-a54d-8643f82e28b8" />
+<img width="370" height="596" alt="Untitled (1)" src="https://github.com/user-attachments/assets/dbfa02cd-3d12-40ec-8190-0d0571e4525b" />
 
 link figma : 
-https://www.figma.com/design/etUIQXuRdJ8GUN8AXFMx5C/Untitled?node-id=0-1&t=cbxj5YuOD6LfpUan-1
+https://www.figma.com/design/etUIQXuRdJ8GUN8AXFMx5C/LybraryReg?node-id=0-1&t=cbxj5YuOD6LfpUan-1
+
+---
 
 <img width="1869" height="886" alt="image" src="https://github.com/user-attachments/assets/82b88971-8e00-4333-8cec-e34453ceacef" />
 
@@ -195,6 +182,8 @@ https://www.figma.com/design/etUIQXuRdJ8GUN8AXFMx5C/Untitled?node-id=0-1&t=cbxj5
 <img width="886" height="449" alt="image" src="https://github.com/user-attachments/assets/3d53db9b-58fc-4639-8d70-e0b6fc13f030" />
 
 <img width="863" height="438" alt="image" src="https://github.com/user-attachments/assets/003ac123-a6f2-47c2-b4c4-6537b67e5e5b" />
+
+---
 
 ## 4. Update design UI Landing page & Implementasi web deployment
 
