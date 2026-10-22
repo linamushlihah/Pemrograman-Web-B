@@ -3,121 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beranda - Perpustakaan</title>
-  <meta name="description" content=" Website LibraryReg - Informasi dan Pendaftaran anggota perpustakaan">
+  <meta name="description" content="LibraryReg — informasi dan pendaftaran anggota perpustakaan.">
+  <title>Beranda | LibraryReg</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
   <header class="navbar">
     <div class="container navbar__inner">
-      <a href="index.html" class="brand">
-        <img src="./image/logo.png" alt="Logo Perpustakaan">
-        <span>LibraryReg - Perpustakaan ITS</span>
+      <a class="brand" href="index.html">
+        <img src="image/logo.png" alt="perpustakaan">
+        <span>
+          <b>LibraryReg</b>
+          <small>Perpustakaan ITS</small>
+        </span>
       </a>
-
       <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
         <span></span>
       </button>
-
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="active">Beranda</a></li>
-        <li><a href="formreg.html">FormReg</a></li>
-        <li><a href="memberlist.html">Memberlist</a></li>
-      </ul>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="active" href="index.html">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="formreg.html">Pendaftaran</a></li>
+          <li><a href="memberlist.html">Data Anggota</a></li>
+          <li><a class="nav-login" href="login.html">Login Petugas</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="hero">
-      <div class="container">
+      <div class="container hero__inner">
         <div class="hero__content">
-          <span class="hero__tag">Gerbang ilmu, Jendela masa depan</span>
-          <h1>Welcome<br>perpustakaan ITS</h1>
-          <p>Akses ribuan koleksi buku, jurnal, E-book, dan 
-            sumber referensi untuk mendukung proses belajar, penelitian dan pengembangan diri</p>
-          <a href="#layanan" class="btn">Daftar Anggota</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Informasi layanan -->
-    <section class="section" id="layanan">
-      <div class="container split">
-        <div class="photo-frame photo-frame--portrait">
-          <img src="./image/kepala-sekolah.jpg" alt="layanan-perpus">
-        </div>
-
-        <div>
-          <div class="quote-mark"></div>
-          <h2 class="section-title"></h2>
-          <p>Lihat selengkapanya</p>
-          <p>Kunjungi website https://www.its.ac.id/perpustakaan/ </p>
-          <div class="signature">
-            <strong>Perpustakan ITS</strong>
-            <span>LibraryReg</span>
+          <span class="hero__tag">GERBANG ILMU, JENDELA MASA DEPAN</span>
+          <h1>Selamat Datang di<br>Perpustakaan ITS</h1>
+          <p>Akses ribuan koleksi buku, jurnal, e-book, dan sumber referensi untuk mendukung proses belajar, penelitian, dan pengembangan diri.</p>
+          <div class="hero__actions">
+            <a class="btn" href="formreg.html">♟ Daftar Anggota</a>
+            <a class="btn btn--outline" href="#layanan">Lihat Layanan</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Statistik ilustratif jumlahkoleksi dan anggota -->
-    <section class="section section--tint" id="tentang">
-      <div class="container split split--reverse">
-        <div>
-          <div class="quote-mark"></div>
-          <h2 class="section-title">Jumlah koleksi dan Anggota</h2>
-          <p>50.000++ koleksi</p>
-          <p>3.000++ sudah mendaftar sebagai anggota</p>
+    <section class="feature-strip" aria-label="Keunggulan perpustakaan">
+      <div class="container feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon blue">▤</span>
+          <h3>Koleksi Lengkap</h3>
+          <p>Referensi buku, jurnal, dan e-book untuk menunjang belajar.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon purple">♟</span>
+          <h3>Akses untuk Semua</h3>
+          <p>Layanan untuk mahasiswa, dosen, dan tenaga kependidikan.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon green">▣</span>
+          <h3>Layanan Digital</h3>
+          <p>Akses katalog online dan sumber referensi digital.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon orange">◷</span>
+          <h3>Ruang Nyaman</h3>
+          <p>Tempat belajar mandiri dan diskusi yang kondusif.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="tentang">
+      <div class="container split">
+        <div class="photo-frame">
+          <img src="image/perpustakaan.jpeg" alt="Suasana ruang perpustakaan dengan koleksi buku">
         </div>
-        <div class="photo-frame photo-frame--wide">
-          <img src="./image/sekolah-aerial.jpg" alt="Statistik">
+        <div>
+          <span class="eyebrow">TENTANG PERPUSTAKAAN</span>
+          <h2 class="section-title">Temukan ruang untuk bertumbuh.</h2>
+          <p class="section-lead">Perpustakaan mendukung kegiatan akademik melalui akses informasi, koleksi referensi, ruang belajar, dan layanan pendampingan informasi.</p>
+          <p>LibraryReg membantu calon anggota mengenal layanan perpustakaan dan mengajukan pendaftaran secara online dengan alur yang mudah.</p>
+          <a class="text-link" href="https://www.its.ac.id/perpustakaan/" target="_blank" rel="noopener">Informasi resmi Perpustakaan ITS ↗</a>
         </div>
       </div>
     </section>
 
-    <!-- KEunggulan dan Fasilitas -->
-    <section class="section" id="keunggulan-fasilitas">
+    <section class="section section--tint" id="statistik">
       <div class="container">
-        <h2 class="section-title">Keunggulan &amp; Fasilitas</h2>
-        <p class="section-lead">Benefit keanggotaan</p>
-
-        <div class="tabs" role="tablist" aria-label="Pilih Keunggulan atau Fasilitas">
-          <button class="tab-btn active" role="tab" aria-selected="true" data-target="panel-Keunggulan">Keunggulan</button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-target="panel-Fasilitas">Fasilitas</button>
+        <div class="section-heading">
+          <span class="eyebrow">DATA STATISTIK PERPUSTAKAAN</span>
+          <h2 class="section-title">Temukan lebih banyak pengetahuan</h2>
+          <p class="section-lead">__</p>
         </div>
-
-        <div class="tab-panel active" id="panel-Keunggulan" role="tabpanel">
-          <p class="Keunggulan-text">Koleksi lengkap - Akses untuk semua - Layanan Digital - Ruang Nyaman</p>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-icon">▤</span>
+            <strong>50.000+</strong>
+            <span>Koleksi buku & referensi</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon">♟</span>
+            <strong id="memberStat">10.000+</strong>
+            <span>Anggota bergabung</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon">▣</span>
+            <strong>1.500+</strong>
+            <span>Akses sumber referensi online</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon">◷</span>
+            <strong>300+</strong>
+            <span>Workkspace capacity</span>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="tab-panel" id="panel-Fasilitas" role="tabpanel">
-          <ul class="Fasilitas-list">
-            <li>Koleksi lengkap - Lebih dari 50.000 koleksi buku dan e-book</li>
-            <li>Akses untuk semua - Mahasiswa, Dosen, dan Tenaga Kependidikan</li>
-            <li>Layanan Digital - Akses katalog online dan e-resource</li>
-            <li>Ruang Nyaman - Fasilitas belajar dan diskusi yang nyaman</li>
-            <li>Discover more - kunjungi perpustakaan dan daftarkan dirimu menjadi anggota!</li>
-          </ul>
+    <section class="section" id="layanan">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">LAYANAN PERPUSTAKAAN</span>
+          <h2 class="section-title">Semua kebutuhan belajar dalam satu tempat</h2>
+          <p class="section-lead">Pilih layanan yang mendukung kegiatan belajar dan penelitianmu.</p>
         </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-icon">▤</span>
+            <h3>Katalog & Peminjaman</h3>
+            <p>Telusuri informasi koleksi dan pelajari prosedur peminjaman maupun pengembalian buku.</p>
+            <a href="https://www.its.ac.id/perpustakaan/" target="_blank" rel="noopener">Pelajari layanan ↗</a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon purple">▣</span>
+            <h3>E-book & E-journal</h3>
+            <p>Temukan sumber elektronik untuk mendukung tugas kuliah, riset, dan penulisan ilmiah.</p>
+            <a href="https://www.its.ac.id/perpustakaan/" target="_blank" rel="noopener">Jelajahi sumber digital ↗</a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon green">⌕</span>
+            <h3>Konsultasi Informasi</h3>
+            <p>Dapatkan arahan untuk menelusuri referensi dan menemukan sumber informasi yang relevan.</p>
+            <a href="https://www.its.ac.id/perpustakaan/" target="_blank" rel="noopener">Lihat informasi ↗</a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon orange">▦</span>
+            <h3>Ruang Belajar</h3>
+            <p>Manfaatkan lingkungan belajar untuk membaca, mengerjakan tugas, dan berdiskusi.</p>
+            <a href="https://www.its.ac.id/perpustakaan/" target="_blank" rel="noopener">Lihat fasilitas ↗</a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">✎</span>
+            <h3>Literasi Informasi</h3>
+            <p>Bangun keterampilan mencari, mengevaluasi, dan menggunakan informasi secara tepat.</p>
+            <a href="https://www.its.ac.id/perpustakaan/" target="_blank" rel="noopener">Pelajari lebih lanjut ↗</a>
+          </article>
+          <article class="service-card service-cta">
+            <h3>Belum menjadi anggota?</h3>
+            <p>Daftarkan dirimu melalui formulir online untuk memulai proses pendaftaran anggota.</p>
+            <a class="btn" href="formreg.html">Daftar Sekarang →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-banner">
+      <div class="container join-inner">
+        <div>
+          <h2>Mulai perjalanan belajarmu.</h2>
+          <p>Daftar sebagai anggota dan kenali layanan perpustakaan yang tersedia.</p>
+        </div>
+        <a class="btn btn--white" href="formreg.html">Daftar Anggota →</a>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <p>© Hubungi +6218900 </p>
-      <p>Jam operasional layanan: 07.00 - 17.00</p>
-      <p>Informasi selengkapnya, kunjungi https://www.its.ac.id/perpustakaan/ </p>
+    <div class="container footer-inner">
+      <a class="brand brand--footer" href="index.html">
+        <img src="image/logo.png" alt="">
+        <span>
+          <b>LibraryReg</b>
+          <small>Perpustakaan ITS</small>
+        </span>
+      </a>
+      <div>
+        <p>Informasi layanan mengikuti pengumuman resmi perpustakaan.</p>
+        <a href="https://www.its.ac.id/perpustakaan/" target="_blank" rel="noopener">Website Perpustakaan ITS ↗</a>
+        <p>Jam operasional : 08.00 - 17.00</p>
+      </div>
+      <p class="copyright">© 2026 LibraryReg · Proyek pembelajaran</p>
+      <p>Hubungi +62123456</p>
     </div>
-  </footer>
-
+  </footer >
   <script src="script.js"></script>
 </body>
 </html>
