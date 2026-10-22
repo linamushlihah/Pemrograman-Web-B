@@ -172,6 +172,7 @@ link figma :
 https://www.figma.com/design/etUIQXuRdJ8GUN8AXFMx5C/LybraryReg?node-id=0-1&t=cbxj5YuOD6LfpUan-1
 
 ---
+implementasi awal :
 
 <img width="1869" height="886" alt="image" src="https://github.com/user-attachments/assets/82b88971-8e00-4333-8cec-e34453ceacef" />
 
@@ -186,6 +187,8 @@ https://www.figma.com/design/etUIQXuRdJ8GUN8AXFMx5C/LybraryReg?node-id=0-1&t=cbx
 ---
 
 ## 4. Update design UI Landing page & Implementasi web deployment
+
+web deploy : https://lybraryreg-063.vercel.app/login.html 
 
 <img width="950" height="448" alt="image" src="https://github.com/user-attachments/assets/a4d26d5a-5507-48c6-941f-e2de261a258b" />
 
@@ -205,7 +208,6 @@ https://www.figma.com/design/etUIQXuRdJ8GUN8AXFMx5C/LybraryReg?node-id=0-1&t=cbx
 
 <img width="947" height="448" alt="image" src="https://github.com/user-attachments/assets/bd99840d-0bf5-4145-9358-8a13333b4a99" />
 
-web deploy : https://lybraryreg-063.vercel.app/login.html 
 
 
 
