@@ -169,7 +169,7 @@ Website tidak menggunakan backend atau database pada versi saat ini.
 <img width="370" height="596" alt="Untitled (1)" src="https://github.com/user-attachments/assets/dbfa02cd-3d12-40ec-8190-0d0571e4525b" />
 
 link figma : 
-https://www.figma.com/design/etUIQXuRdJ8GUN8AXFMx5C/LybraryReg?node-id=0-1&t=cbxj5YuOD6LfpUan-1
+https://www.figma.com/proto/etUIQXuRdJ8GUN8AXFMx5C/LybraryReg?node-id=3-1085&t=Z5E8yJxd59u2m5g7-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A1085
 
 ---
 implementasi awal :
